@@ -25,11 +25,37 @@
 .btn-success:active, .btn-success.active {
   background-color: #57a900;
 }
-
-div.container a.brand {
-    background: url("../images/zf2-logo.png") no-repeat scroll 0 10px transparent;
-    height: 122px;
+body {
+    width: 100%;
+    margin: 0 auto;
+    background: #C1C0BB;
+}
+.navbar-fixed-top,.container {
+    width: 80%;
+    margin: 0 auto;
+    display: block
+}
+.navbar-inner {
+    float: left;
+    width: 100%;
+}
+.Logo {
+    display: block;
+}
+div.navcontainer a.brand {
+    background: url("../images/kd-logo.jpg") no-repeat scroll 0 10px transparent;
+    height: 250px;
     margin-left: 0;
     padding: 10px;
-    width: 122px;
+    width: 250px;
+    display: inline-block;
+    float: left
+}
+.nav-collapse li {
+    list-style: none;
+}
+.nav-collapse {
+    display: inline-block;
+    float: left;
+    list-style: none;
 }
