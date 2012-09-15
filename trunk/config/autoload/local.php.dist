@@ -11,6 +11,10 @@
  * credentials from accidentally being comitted into version control.
  */
 
+// config/autoload/local.php:
 return array(
-    // ...
+    'db' => array(
+        'username' => 'purvesh',
+        'password' => 'admin123',
+    ),
 );
