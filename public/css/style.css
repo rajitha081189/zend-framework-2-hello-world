@@ -21,7 +21,10 @@
 .btn-success[disabled] {
   background-color: #57a900;
 }
-
+footer {
+    width: 80%;
+    margin: 0 auto;
+}
 .btn-success:active, .btn-success.active {
   background-color: #57a900;
 }
@@ -37,7 +40,13 @@ body {
 }
 .navbar-inner {
     float: left;
+    border-bottom: 1px solid ;
     width: 100%;
+}
+.content {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid;
 }
 .Logo {
     display: block;
