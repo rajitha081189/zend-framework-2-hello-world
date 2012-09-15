@@ -1,55 +1,59 @@
 <?php echo $this->doctype(); ?>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <?php echo $this->headTitle('Kdecom  '. $this->translate('Zend Framework 2 -  Hello World'))->setSeparator(' - ')->setAutoEscape(false) ?>
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('Kdecom  ' . $this->translate('Zend Framework 2 -  Hello World'))->setSeparator(' - ')->setAutoEscape(false) ?>
 
-    <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
 
-    <!-- Le styles -->
-    <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/images/favicon.ico'))
-                    ->prependStylesheet($this->basePath() . '/css/bootstrap-responsive.min.css')
-                    ->prependStylesheet($this->basePath() . '/css/style.css')
-                    ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css') ?>
+        <!-- Le styles -->
+        <?php
+        echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/images/favicon.ico'))
+                ->prependStylesheet($this->basePath() . '/css/bootstrap-responsive.min.css')
+                ->prependStylesheet($this->basePath() . '/css/style.css')
+                ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css')
+        ?>
 
-    <!-- Scripts -->
-    <?php echo $this->headScript()->prependFile($this->basePath() . '/js/html5.js', 'text/javascript', array('conditional' => 'lt IE 9',))
-                                  ->prependFile($this->basePath() . '/js/jquery-1.7.2.min.js') ?>
+        <!-- Scripts -->
+<?php echo $this->headScript()->prependFile($this->basePath() . '/js/html5.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                ->prependFile($this->basePath() . '/js/jquery-1.7.2.min.js') ?>
 
-  </head>
+    </head>
 
-  <body>
+    <body>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="navcontainer">
-          
-            <div class="Logo">
-                <a class="brand" href="<?php echo $this->url('home') ?>"></a>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="navcontainer">
+
+                    <div class="Logo">
+                        <a class="brand" href="<?php echo $this->url('home') ?>"></a>
+                    </div>
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                            <li class=""><a href="<?php echo $this->url('album') ?>"><?php echo $this->translate('Album') ?></a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
             </div>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
-              <li class=""><a href="<?php echo $this->url('album') ?>"><?php echo $this->translate('Album') ?></a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+            <hr>
         </div>
-      </div>
-    </div>
 
-    <div class="container">
+        <div class="container">
+            <div class="content">
 
-      <?php echo $this->content; ?>
+<?php echo $this->content; ?>
+            </div>
+            <hr>
 
-      <hr>
 
-      <footer>
+        </div> <!-- /container -->
+    <footer>
         <p>&copy; 2012 by Kdecom. <?php echo $this->translate('All rights reserved.') ?></p>
-      </footer>
+    </footer>
 
-    </div> <!-- /container -->
-
-  <?php echo $this->inlineScript() ?>
-  </body>
+<?php echo $this->inlineScript() ?>
+</body>
 </html>

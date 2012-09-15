@@ -17,6 +17,9 @@ class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
+        return new ViewModel(array(
+            'title' => 'Hello World',
+        ));
         
     }
 }
