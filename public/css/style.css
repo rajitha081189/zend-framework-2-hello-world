@@ -41,18 +41,22 @@ body {
 }
 .Logo {
     display: block;
+    float: left;
+    width: 125px;
 }
 div.navcontainer a.brand {
     background: url("../images/kd-logo.jpg") no-repeat scroll 0 10px transparent;
-    height: 250px;
+    height: 125px;
     margin-left: 0;
     padding: 10px;
-    width: 250px;
+    width: 125px;
     display: inline-block;
     float: left
 }
 .nav-collapse li {
-    list-style: none;
+    display: inline;
+    list-style: none outside none;
+    padding: 5px 10px;
 }
 .nav-collapse {
     display: inline-block;
