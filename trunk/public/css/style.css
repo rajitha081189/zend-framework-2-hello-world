@@ -47,6 +47,7 @@ body {
     width: 100%;
     float: left;
     border-bottom: 1px solid;
+    padding: 15px 25px 50px 0;
 }
 .Logo {
     display: block;
