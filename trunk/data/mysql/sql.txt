@@ -1,18 +1,16 @@
-create database kd-zf2;
+create database kd_tutorial;
 
-CREATE TABLE album (
+CREATE TABLE game (
   id int(11) NOT NULL auto_increment,
-  artist varchar(100) NOT NULL,
+  type varchar(100) NOT NULL,
   title varchar(100) NOT NULL,
   PRIMARY KEY (id)
 );
-INSERT INTO album (artist, title)
-    VALUES  ('The  Military  Wives',  'In  My  Dreams');
-INSERT INTO album (artist, title)
-    VALUES  ('Adele',  '21');
-INSERT INTO album (artist, title)
-    VALUES  ('Bruce  Springsteen',  'Wrecking Ball (Deluxe)');
-INSERT INTO album (artist, title)
-    VALUES  ('Lana  Del  Rey',  'Born  To  Die');
-INSERT INTO album (artist, title)
-    VALUES  ('Gotye',  'Making  Mirrors');
+INSERT INTO game (type, title)
+    VALUES  ('Xbox',  'Dance Central');
+INSERT INTO game (type, title)
+    VALUES  ('Xbox 360',  'Halo4');
+INSERT INTO game (type, title)
+    VALUES  ('PS3',  'Dishonored');
+INSERT INTO game (type, title)
+    VALUES  ('PS2',  'Fifa Soccer 13');

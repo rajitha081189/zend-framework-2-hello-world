@@ -1,7 +1,8 @@
 <?php
 return array(
     'modules' => array(
-        'Application'
+        'Application',
+        'Game'
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(
